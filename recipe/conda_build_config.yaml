@@ -1,0 +1,5 @@
+channel_sources:
+  - omnia,conda-forge,defaults
+channel_targets:
+  - SimonBoothroyd main
+
