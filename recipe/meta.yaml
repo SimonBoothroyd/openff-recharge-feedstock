@@ -1,0 +1,44 @@
+{% set name = "openff-recharge" %}
+{% set version = "0.0.1-alpha.1" %}
+{% set sha256 = "6d50680fd66a66fee653ded25881ea87b93638cb5806f3389b52996c8a061f40" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/openforcefield/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - pydantic
+    - openeye-toolkits
+    - jinja2
+    - sqlalchemy
+    - sqlite
+    - typing-extensions
+
+test:
+  imports:
+    - openff.recharge
+
+about:
+  home: https://github.com/openforcefield/openff-recharge
+  license: MIT
+  license_file: LICENSE
+  description: An automated framework for generating optimized partial charges for molecules.
+
+extra:
+  recipe-maintainers:
+    - simonboothroyd
