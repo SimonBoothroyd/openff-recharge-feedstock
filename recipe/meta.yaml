@@ -1,6 +1,6 @@
 {% set name = "openff-recharge" %}
-{% set version = "0.0.1a1" %}
-{% set sha256 = "6d50680fd66a66fee653ded25881ea87b93638cb5806f3389b52996c8a061f40" %}
+{% set version = "0.0.1a2" %}
+{% set sha256 = "8a6fbba1527edf5ce6d79b7f8326a6ea9143a9130b8913d92b942ff0bb761c80" %}
 
 package:
   name: {{ name }}
@@ -21,9 +21,9 @@ requirements:
     - pip
   run:
     - python
+    - click
     - numpy
     - pydantic
-    - openeye-toolkits
     - jinja2
     - sqlalchemy
     - sqlite
