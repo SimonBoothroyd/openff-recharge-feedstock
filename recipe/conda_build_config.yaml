@@ -1,4 +1,4 @@
 channel_sources:
-  - openeye,omnia,conda-forge,defaults
+  - omnia,conda-forge,defaults
 channel_targets:
   - SimonBoothroyd alpha

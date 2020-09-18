@@ -1,6 +1,6 @@
 {% set name = "openff-recharge" %}
-{% set version = "0.0.1a2" %}
-{% set sha256 = "8a6fbba1527edf5ce6d79b7f8326a6ea9143a9130b8913d92b942ff0bb761c80" %}
+{% set version = "0.0.1a3" %}
+{% set sha256 = "bd8f3d73040d0634d74a397fa91bdaf4dca9d31f82c79b11dc1ec43ffe11e11b" %}
 
 package:
   name: {{ name }}
