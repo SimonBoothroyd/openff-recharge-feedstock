@@ -1,6 +1,6 @@
 {% set name = "openff-recharge" %}
-{% set version = "0.0.1a4" %}
-{% set sha256 = "00a2d2285a6059b3cd4f2c4d64caa261c660f8b071ae27e193353bbb1b5837e2" %}
+{% set version = "0.0.1a5" %}
+{% set sha256 = "82a84e33e648e3bfc92b3fb374409db623d6ba1f0b9e55f18528a6260e151f29" %}
 
 package:
   name: {{ name }}
@@ -22,6 +22,7 @@ requirements:
   run:
     - python
     - click
+    - cmiles-base
     - numpy
     - pydantic
     - jinja2

@@ -5,7 +5,7 @@ Home: https://github.com/openforcefield/openff-recharge
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-recharge-feedstock/blob/master/LICENSE.txt)
 
 Summary: 
 
