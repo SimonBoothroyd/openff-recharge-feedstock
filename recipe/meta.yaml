@@ -1,6 +1,6 @@
 {% set name = "openff-recharge" %}
-{% set version = "0.0.1a5" %}
-{% set sha256 = "82a84e33e648e3bfc92b3fb374409db623d6ba1f0b9e55f18528a6260e151f29" %}
+{% set version = "0.0.1a6" %}
+{% set sha256 = "1800043c61320ae2f90129bbcb66fb897254c62a3301c906867c6016c095664b" %}
 
 package:
   name: {{ name }}
@@ -14,6 +14,8 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  entry_points:
+    - recharge = recharge.cli:cli
 
 requirements:
   host:
@@ -22,6 +24,7 @@ requirements:
   run:
     - python
     - click
+    - tqdm
     - cmiles-base
     - numpy
     - pydantic
